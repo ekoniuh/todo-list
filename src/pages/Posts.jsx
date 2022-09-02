@@ -9,7 +9,7 @@ import MyModal from '../components/UI/MyModal/MyModal';
 import Pagination from '../components/UI/pagination/Pagination';
 import MySelect from '../components/UI/select/MySelect';
 import { useFetching } from '../hooks/useFetching';
-import { useObserver } from '../hooks/useObserver';
+// import { useObserver } from '../hooks/useObserver';
 import { usePosts } from '../hooks/usePosts';
 import { getPageCount } from '../utils/pages';
 
@@ -35,6 +35,7 @@ function Posts() {
 
   useEffect(() => {
     fetchPosts(limit, page);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page, limit]);
 
   const createPost = (newPost) => {

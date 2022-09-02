@@ -18,7 +18,7 @@ const Login = () => {
   return (
     <div className="login-wrapper">
       <div>
-        <h4>Страница для логина</h4>
+        <h5>Заполнице поля любыми данными</h5>
         <form onSubmit={login}>
           <MyInput type="text" placeholder="Введите логин" />
           <MyInput type="password" placeholder="Введите пароль" />
