@@ -12,7 +12,7 @@ const Login = () => {
     event.preventDefault();
     setIsAuth(true);
     localStorage.setItem('auth', 'true');
-    navigate('/posts', { replace: true });
+    navigate('/todo-list/posts', { replace: true });
   };
 
   return (
