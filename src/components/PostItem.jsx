@@ -14,7 +14,7 @@ const PostItem = ({ post, remove }) => {
         <div>{post.body}</div>
       </div>
       <div className="post__btns">
-        <MyButton onClick={() => navigate(`/posts/${post.id}`)}>Открыть</MyButton>
+        <MyButton onClick={() => navigate(`/todo-list/posts/${post.id}`)}>Открыть</MyButton>
         <MyButton onClick={() => remove(post)}>Удалить</MyButton>
       </div>
     </div>
